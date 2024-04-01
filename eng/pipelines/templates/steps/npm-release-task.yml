@@ -16,7 +16,7 @@ steps:
           Intent: 'PackageDistribution'
           ContentType: 'npm'
           FolderLocation: ${{parameters.PathToArtifacts}}
-          Owners: $(Build.RequestedForEmail)
+          Owners: '$(Build.RequestedForEmail)'
           Approvers: 'azuresdk@microsoft.com'
           ServiceEndpointUrl: 'https://api.esrp.microsoft.com'
           MainPublisher: 'ESRPRELPACMANTEST'
